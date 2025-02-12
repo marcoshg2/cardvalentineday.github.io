@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/marcoshg2/cardvalentineday.github.io.git/static/css/main.f31c0480.css",
-    "main.js": "/marcoshg2/cardvalentineday.github.io.git/static/js/main.67c85094.js",
-    "static/js/453.ed3810f9.chunk.js": "/marcoshg2/cardvalentineday.github.io.git/static/js/453.ed3810f9.chunk.js",
-    "static/media/cat-yes.gif": "/marcoshg2/cardvalentineday.github.io.git/static/media/cat-yes.89484fc79744aa75948c.gif",
-    "index.html": "/marcoshg2/cardvalentineday.github.io.git/index.html",
-    "main.f31c0480.css.map": "/marcoshg2/cardvalentineday.github.io.git/static/css/main.f31c0480.css.map",
-    "main.67c85094.js.map": "/marcoshg2/cardvalentineday.github.io.git/static/js/main.67c85094.js.map",
-    "453.ed3810f9.chunk.js.map": "/marcoshg2/cardvalentineday.github.io.git/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/cardvalentineday.github.io/static/css/main.f31c0480.css",
+    "main.js": "/cardvalentineday.github.io/static/js/main.69be21a4.js",
+    "static/js/453.ed3810f9.chunk.js": "/cardvalentineday.github.io/static/js/453.ed3810f9.chunk.js",
+    "static/media/cat-yes.gif": "/cardvalentineday.github.io/static/media/cat-yes.89484fc79744aa75948c.gif",
+    "index.html": "/cardvalentineday.github.io/index.html",
+    "main.f31c0480.css.map": "/cardvalentineday.github.io/static/css/main.f31c0480.css.map",
+    "main.69be21a4.js.map": "/cardvalentineday.github.io/static/js/main.69be21a4.js.map",
+    "453.ed3810f9.chunk.js.map": "/cardvalentineday.github.io/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f31c0480.css",
-    "static/js/main.67c85094.js"
+    "static/js/main.69be21a4.js"
   ]
 }
