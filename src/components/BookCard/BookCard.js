@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
 import './BookCard.css';
 import BackgroundAudio from '../BackgroundAudio/BackgroundAudio';
-import cat03 from '../../assets/cat-yes.gif';
+import cat01 from '../../assets/cat-01.gif';
+import cat02 from '../../assets/cat-02.gif';
+import cat03 from '../../assets/cat-03.gif';
+import cat04 from '../../assets/cat-04.gif';
+import cat05 from '../../assets/cat-05.gif';
+import cat06 from '../../assets/cat-06.gif';
 
 function BookCard() {
   const [open, setOpen] = useState(false);
+  const images = [cat01, cat02, cat03, cat04, cat05, cat06];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleClick = () => {
+    // Alterna entre cerrado y abierto
     setOpen(!open);
+    // Si la carta se está abriendo, actualiza el índice para mostrar otra imagen
+    if (!open) {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }
   };
 
   return (
@@ -31,8 +43,8 @@ function BookCard() {
             </div>
             <div className="right-page">
               <div className="animation">
-              <img src={cat03} alt="San Valentin" className="cat img-fluid" />
-            </div>
+                <img src={images[currentImageIndex]} alt="San Valentin" className="cat img-fluid" />
+              </div>
             </div>
           </div>
         </>
