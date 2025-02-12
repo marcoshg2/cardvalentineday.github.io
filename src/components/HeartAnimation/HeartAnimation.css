@@ -1,0 +1,37 @@
+.heart-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.heart-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.heart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.heart-letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 22px; /* tamaño de fuente más grande */
+  font-weight: bold;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* fuente llamativa */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Puedes conservar esta animación si se desea aplicar a otros elementos */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
