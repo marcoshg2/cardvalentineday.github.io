@@ -7,13 +7,14 @@ import BookCard from '../BookCard/BookCard';
 function ValentineCard() {
   const params = new URLSearchParams(window.location.search);
   const destinatario = params.get('to') || 'Amor';
+  const audioEnabled = destinatario.toLowerCase() === 'amor';
 
   return (
     <div className="valentine-card">
       <div className="vc-container">
         <div className="vc-header">
-        <h2>¡ Feliz Día de San Valentín !</h2>
-        <h2>{destinatario}</h2>
+          <h2>¡ Feliz Día de San Valentín !</h2>
+          <h2>{destinatario}</h2>
         </div>
         {/* RoseAnimation en las cuatro esquinas */}
         <div className="rose-margins">
@@ -31,7 +32,7 @@ function ValentineCard() {
           </div>
         </div>
         <div className="vc-content">
-          <BookCard />
+          <BookCard audioEnabled={audioEnabled} />
         </div>
       </div>
     </div>

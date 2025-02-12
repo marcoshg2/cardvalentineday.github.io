@@ -8,7 +8,7 @@ import cat04 from '../../assets/cat-04.gif';
 import cat05 from '../../assets/cat-05.gif';
 import cat06 from '../../assets/cat-06.gif';
 
-function BookCard() {
+function BookCard({ audioEnabled }) {
   const [open, setOpen] = useState(false);
   const images = [cat01, cat02, cat03, cat04, cat05, cat06];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -31,8 +31,8 @@ function BookCard() {
       )}
       {open && (
         <>
-          {/* Una vez que se abre la carta se monta el reproductor de audio */}
-          <BackgroundAudio />
+          {/* Se reproduce el audio solo si audioEnabled es true */}
+          {audioEnabled && <BackgroundAudio />}
           <div className="book-open">
             <div className="left-page">
               <p>
@@ -43,7 +43,11 @@ function BookCard() {
             </div>
             <div className="right-page">
               <div className="animation">
-                <img src={images[currentImageIndex]} alt="San Valentin" className="cat img-fluid" />
+                <img
+                  src={images[currentImageIndex]}
+                  alt="San Valentin"
+                  className="cat img-fluid"
+                />
               </div>
             </div>
           </div>

@@ -1,19 +1,13 @@
 import React from 'react';
+import audioFile from '../../audio/perfecta.mp3';
 
 function BackgroundAudio() {
   return (
-    <iframe 
-      width="853" 
-      height="480" 
-      src="https://www.youtube.com/embed/KgdDQGSL0qs?autoplay=1&controls=0&showinfo=0&autohide=1" 
-      title="Música SUMMER Alegre para Trabajar en Oficinas, Tiendas, Cafés | Música SUMMER En Inglés 2020 #40" 
-      frameBorder="0" 
-      allow="autoplay; encrypted-media" 
-      allowFullScreen
-      style={{ display: 'none' }}
-    ></iframe>
+    <audio autoPlay loop>
+      <source src={audioFile} type="audio/mpeg" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
   );
 }
 
 export default BackgroundAudio;
-
